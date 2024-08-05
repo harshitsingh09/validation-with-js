@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS requires internet to work-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="image2.png" alt="logo" width="30">
+    <h4>This is the Login page</h4>
+  </nav>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h2 class="card-title text-center">Login</h2>
+            <form id="loginForm" action="/login" method="post">
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" name="uname" id="username" aria-describedby="userHelp" required>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password</label>
+                <input type="password" name="pwd" class="form-control" id="pwd" required>
+              </div>
+              <button type="submit" class="btn btn-success btn-block">Login</button>
+              <p id="error-message" class="text-danger text-center mt-2"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
